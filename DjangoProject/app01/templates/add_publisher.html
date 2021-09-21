@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block bar %}
+
+
+{% endblock %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <p>
+        出版社名称 <input type="text" name="name">
+    </p>
+    <p>
+        出版社地址 <input type="text", name="address">
+    </p>
+    <p>
+        <button type="submit" class="btn">提交</button>
+    </p>
+</form>
+</body>
+</html>
